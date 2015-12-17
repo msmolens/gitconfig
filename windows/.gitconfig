@@ -1,0 +1,29 @@
+[user]
+	name = Max Smolens
+	email = max.smolens@kitware.com
+[push]
+	default = simple
+[diff]
+	tool = kdiff3
+[difftool "kdiff3"]
+	cmd = \"C:\\\\Program Files\\\\KDiff3\\\\kdiff3.exe\" \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	cmd = \"C:\\\\Program Files\\\\KDiff3\\\\kdiff3.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	keepBackup = false
+	trustExitCode = false
+[credential]
+	helper = wincred
+[core]
+	excludesfile = c:/Users/max.smolens/.gitignore
+	editor = gvim --nofork '%*'
+[svn]
+	rmdir = true
+	username = msmolens
+[gui]
+	fontdiff = -family \"DejaVu Sans Mono\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+[alias]
+	ls = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --name-status
+	st = status
