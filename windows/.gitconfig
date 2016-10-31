@@ -14,7 +14,7 @@
 	keepBackup = false
 	trustExitCode = false
 [credential]
-	helper = wincred
+	helper = manager
 [core]
 	excludesfile = c:/Users/max.smolens/.gitignore
 	editor = gvim --nofork '%*'
