@@ -3,6 +3,16 @@
 	email = max.smolens@kitware.com
 [push]
 	default = simple
+[diff]
+	tool = kdiff3
+[difftool "kdiff3"]
+	cmd = /usr/bin/kdiff3 \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	cmd = /usr/bin/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	keepBackup = false
+	trustExitCode = false
 [core]
 	editor = gvim --nofork
 	excludesfile = ~/.gitignore
