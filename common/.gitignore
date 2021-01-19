@@ -7,3 +7,7 @@ Session.vim
 *~
 build
 tags
+.aws-sam/
+.terraform/
+.tox/
+.vscode/
