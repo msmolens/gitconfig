@@ -6,11 +6,11 @@
 [pull]
 	rebase = true
 [diff]
-	tool = kdiff3
+	tool = meld
 [difftool "kdiff3"]
 	cmd = /usr/bin/kdiff3 \"$LOCAL\" \"$REMOTE\"
 [merge]
-	tool = kdiff3
+	tool = meld
 [mergetool "kdiff3"]
 	cmd = /usr/bin/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 	keepBackup = false
