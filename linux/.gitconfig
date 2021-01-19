@@ -24,3 +24,5 @@
 	st = status
 [rebase]
 	autosquash = true
+[rerere]
+	enabled = true
